@@ -1,0 +1,14 @@
+<browsers>
+<!-- 
+This file enforces using our form rewriter on every page. 
+
+See FormRewriter.cs for more information.
+-->
+  <browser refID="Default">
+    <controlAdapters>
+      <adapter controlType="System.Web.UI.HtmlControls.HtmlForm"
+               adapterType="FormRewriterControlAdapter" />
+    </controlAdapters>
+  </browser>
+
+</browsers>
