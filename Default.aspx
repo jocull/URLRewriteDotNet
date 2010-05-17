@@ -13,9 +13,11 @@
         <h1>Looks like you're logged in now. I bet that was tough.</h1>
         <asp:Label ID="lblOutput" runat="server" Text="Label"></asp:Label>
         <br /><br />
-        <a href="Content.aspx">This is a local url to some content</a>
+        <a href="Content.aspx">This is a <strong>Local</strong> url to some content</a>
         <br />
-        <a href="<%= SiteRoot %>Content.aspx">This is an absolute url to the same content</a>
+        <a href="<%= ResolveUrl("~/Content.aspx") %>">This is an <strong>ASP.NET</strong> absolute url to the same content</a> (Issues with rewriting)
+        <br />
+        <a href="<%= SiteRoot %>Content.aspx">This is a <strong>SiteRoot</strong> absolute url to the same content</a> (Works in all cases)
         <br /><br />
         Well, that was fun. Maybe you should logout now.
         <br />

@@ -21,7 +21,7 @@ public partial class _Default : BasePage
         lblOutput.Text = "Hey there, <strong>" + Person + "</strong>! ";
         //...and detecting their site
         if(UsingOpenSite)
-            lblOutput.Text += "You seem to be using the <strong style=\"font-size:200%;\">open site</strong>! That's fancy!";
+            lblOutput.Text += "You seem to be using the <strong style=\"font-size:150%;\">open site</strong>! Now THAT is fancy!";
         else
             lblOutput.Text += "How is the plain original site treating you?";
     }
